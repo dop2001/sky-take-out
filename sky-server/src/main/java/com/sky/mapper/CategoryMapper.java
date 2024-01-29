@@ -7,6 +7,8 @@ import com.sky.entity.Category;
 import com.sky.enumeration.OperationType;
 import org.apache.ibatis.annotations.*;
 
+import java.util.List;
+
 @Mapper
 public interface CategoryMapper {
 
@@ -25,4 +27,7 @@ public interface CategoryMapper {
 
     @Select("select * from category where id = #{id}")
     Category selectById(long id);
+
+    @Select("select * from category where type = #{type}")
+    List<Category> selectByType(Integer type);
 }

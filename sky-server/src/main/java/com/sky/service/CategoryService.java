@@ -6,6 +6,8 @@ import com.sky.entity.Category;
 import com.sky.result.PageResult;
 import org.springframework.web.bind.annotation.PathVariable;
 
+import java.util.List;
+
 public interface CategoryService {
 
     /**
@@ -21,5 +23,5 @@ public interface CategoryService {
 
     void delete(long id);
 
-    public Category select(long id);
+    List<Category> list(Integer type);
 }

@@ -39,7 +39,7 @@ public class DishServiceImpl implements DisService {
             flavors.forEach(dishFlavor -> {
                 dishFlavor.setDishId(dishId);
             });
-            // 向口味表插入n条数据
+            // 向口味表插入n条数据我
             dishFlavorMapper.insertBatch(flavors);
         }
     }

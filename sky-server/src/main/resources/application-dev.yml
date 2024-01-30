@@ -13,3 +13,9 @@ sky:
     access-key-secret: edZghqyBo1hQybW3Lrh5w2VbDEjMmt
     bucket-name: web-dop
 
+  redis:
+    host: localhost
+    port: 6379
+    password: 123456
+    database: 0
+
